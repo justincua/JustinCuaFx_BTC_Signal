@@ -608,7 +608,7 @@ def format_signal_message(sig: dict) -> str:
 def format_closed_signal_message(s: dict) -> str:
     status_emoji = "✅" if s["result"] == "WIN" else "❌"
     return (
-        f"{status_emoji} <b>{SYMBOL} SIGNAL CLOSED</b>\n\n"
+        f"{status_emoji} <b>{SYMBOL} SIGNAL ĐÓNG</b>\n\n"
         f"Direction: {s['signal']}\n"
         f"Entry: {s['entry']}\n"
         f"SL: {s['sl']}\n"
@@ -679,7 +679,7 @@ def run_once():
 
 def main():
     log("Bot BTC Intraday Signal Full đang chạy...")
-    send_telegram("🤖 Bot BTC Intraday Signal Full đã khởi động.")
+    send_telegram("🤖 Bot Signal JUSTINCUAFX Full đã khởi động.")
 
     while True:
         try:
@@ -692,3 +692,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
